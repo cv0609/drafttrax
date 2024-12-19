@@ -1,0 +1,944 @@
+@media(max-width:1400px) {
+  .banner_left {
+    padding-inline: 1rem;
+  }
+
+  .header_logoLnk {
+    width: 100px;
+  }
+
+  .playing {
+    margin-top: 70px;
+  }
+
+  .footer_icon {
+    width: 100px;
+  }
+}
+
+/* media query 1200 */
+@media (max-width: 1200px) {
+  .banner {
+    height: 450px;
+  }
+
+  .heading {
+    font-size: 55px;
+    margin-bottom: 28px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .why {
+    margin-block: 50px 70px;
+  }
+
+  .singup {
+    margin-bottom: 32px;
+  }
+
+  .faq {
+    margin-bottom: 70px;
+  }
+
+  .testimonial {
+    margin-block: 0 70px;
+  }
+
+  .testimonial-card {
+    height: 100%;
+  }
+
+  .singup_heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .playing {
+    margin-top: 75px;
+  }
+
+
+  .header_list {
+    flex-direction: column;
+    gap: 16px;
+    align-items: start;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+  }
+
+  .header_right {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .humburger {
+    display: flex;
+  }
+
+  .header_navbar {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: var(--black-color);
+    position: fixed;
+    height: 100%;
+    top: 0;
+    z-index: 5;
+    padding: 16px;
+    right: 0;
+    box-shadow: rgba(0, 0, 0, 0.9) -4px 9px 25px -6px;
+    transform: translateX(100%);
+    max-width: 350px;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+  }
+
+  .header_navbar.active {
+    right: 0;
+    transform: translateX(0%);
+  }
+
+  .close_menu {
+    display: flex;
+  }
+
+  .header_item {
+    padding-left: 0;
+  }
+
+  .banner_heading {
+    font-size: 60px;
+    line-height: 100%;
+  }
+
+  .banner_btns {
+    margin-top: 85px;
+  }
+
+  .leagues_heading {
+    font-size: 34px;
+    margin-bottom: 48px;
+    margin-top: 16px;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+  .login_signup_form {
+    margin-block: 70px;
+}
+}
+
+/* media query 1024 */
+@media (max-width: 1024px) {
+  .banner {
+    height: 400px;
+  }
+
+  .heading {
+    font-size: 50px;
+    margin-bottom: 26px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .why {
+    margin-block: 48px 60px;
+  }
+
+  .faq {
+    margin-bottom: 60px;
+  }
+
+  .testimonial {
+    margin-block: 0 60px;
+  }
+
+  .playing {
+    margin-top: 60px;
+  }
+
+  .singup {
+    padding-block: 60px;
+    height: 450px;
+  }
+
+  .testimonial_wrapper {
+    padding: 20px;
+  }
+
+  .section {
+    margin-block: 3rem;
+  }
+
+  .form-container {
+    padding: 18px;
+  }
+
+  .singup_heading {
+    font-size: 32px;
+    margin-bottom: 18px;
+  }
+
+  .playing_inner {
+    margin-bottom: 28px;
+  }
+
+  .banner_heading {
+    font-size: 50px;
+    margin-bottom: 16px;
+  }
+
+  .banner_desc {
+    font-size: 18px;
+  }
+
+  .banner_btns a {
+    width: 200px;
+  }
+
+  .banner_btns {
+    margin-top: 70px;
+  }
+
+  .welcome_heading {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  .welcome_desc {
+    font-size: 20px;
+  }
+  .login_signup_form {
+    margin-block: 60px;
+}
+}
+
+/* media query 991 */
+@media (max-width: 991px) {
+  .sec_content {
+    padding: 20px;
+  }
+
+  .heading {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+
+  .sec_title {
+    font-size: 22px;
+    margin-block: 8px;
+  }
+
+  .sub_title {
+    margin-bottom: 12px;
+  }
+
+  .singup {
+    padding-block: 50px;
+    height: 400px;
+  }
+
+  .playing_inner {
+    margin-bottom: 24px;
+  }
+
+  .playing_inner {
+    flex-direction: column;
+  }
+
+  .playing_left,
+  .playing_right {
+    width: 100%;
+  }
+
+  .playing_content {
+    padding: 8px;
+  }
+
+  .playing_item {
+    margin-left: 20px;
+  }
+
+  .banner_heading,
+  .banner_desc {
+    text-align: center;
+  }
+
+  .banner_btns {
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  .singup_left {
+    width: 100%;
+  }
+
+  .singup_right {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .singup_wrapper {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .welcome {
+    height: 600px;
+    margin: 50px 0;
+  }
+
+  .leagues {
+    margin-bottom: 50px;
+  }
+
+  .singup_left {
+    height: 600px;
+    position: relative;
+  }
+
+  .singup_left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.5;
+  }
+
+  .singup_tobar {
+    margin-bottom: 75px;
+  }
+
+  .leagues_heading {
+    margin-bottom: 48px;
+  }
+
+  .leagues_left {
+    height: 600px;
+    width: 100%;
+    position: relative;
+  }
+
+  .leagues_left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+  }
+
+  .leagues_wrapper {
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .leagues_right {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    padding-inline: 16px;
+  }
+
+  .leagues_heading {
+    font-size: 32px;
+    margin-bottom: 36px;
+    margin-top: 12px;
+  }
+
+  .footer_navbar {
+    width: 26%;
+  }
+
+  .banner_wrapper {
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .banner_right {
+    height: 700px;
+    width: 100%;
+    position: relative;
+  }
+
+  .banner_right:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.5;
+  }
+
+  .banner_left {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .banner-content h1 {
+    font-size: 38px;
+  }
+
+  .why_inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact_wrapper {
+    padding: 20px;
+}
+.contact_inner {
+  margin-bottom: 40px;
+}
+.login_signup_form {
+  margin-block: 50px;
+}
+
+}
+
+/* media query 768 */
+@media (max-width: 768px) {
+  .sec_content {
+    padding: 16px;
+  }
+
+  .accordion_question {
+    margin-right: 32px;
+  }
+
+  .sec_title {
+    font-size: 20px;
+  }
+
+  .sub_title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .banner {
+    height: 350px;
+  }
+
+  .heading {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .why {
+    margin-block: 40px;
+  }
+
+  .testimonial {
+    margin-block: 0 40px;
+  }
+
+  .singup {
+    margin-bottom: 28px;
+  }
+
+  .testimonial_wrapper {
+    padding: 16px;
+  }
+
+  .playing_inner {
+    padding: 8px;
+  }
+
+  .playing_title {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+
+  .playing_desc {
+    margin-bottom: 12px;
+  }
+
+  .playing_inner {
+    margin-bottom: 16px;
+  }
+
+  .faq {
+    margin-bottom: 48px;
+  }
+
+  .singup {
+    padding-block: 48px;
+    height: 350px;
+  }
+
+  .playing {
+    margin-top: 48px;
+  }
+
+  .section {
+    margin-block: 2rem;
+  }
+
+  .banner-content h1 {
+    font-size: 32px;
+  }
+
+  .pages-banner {
+    height: 350px;
+  }
+
+  .desc_help {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .faq_wrapper {
+    margin: 32px auto;
+    padding: 16px;
+  }
+
+  .singup_heading {
+    font-size: 28px;
+  }
+
+  .header_logoLnk {
+    height: 50px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 10px 24px
+  }
+
+  .banner_btns {
+    margin-top: 32px;
+  }
+
+  .banner_desc {
+    font-size: 18px;
+  }
+
+  .banner_heading {
+    font-size: 55px;
+  }
+
+  .banner_right {
+    height: 600px;
+  }
+
+  .banner_left {
+    width: 100%;
+  }
+
+  .banner_right {
+    width: 100%;
+  }
+
+  .welcome {
+    height: 450px;
+  }
+
+  .singup_left {
+    height: 600px;
+  }
+
+  .singup_tobar {
+    margin-bottom: 65px;
+  }
+
+  .footer_left {
+    width: 40%;
+    order: 1;
+  }
+
+  .welcome_heading {
+    font-size: 28px;
+    margin-bottom: 28px;
+  }
+
+  .welcome_desc {
+    font-size: 18px;
+  }
+
+  .leagues_wrapper {
+    flex-direction: column;
+  }
+
+  .leagues_left {
+    width: 100%;
+  }
+
+  .leagues_right {
+    width: 100%;
+  }
+
+  .leagues_inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .leagues_heading {
+    font-size: 28px;
+    margin-bottom: 24px;
+    margin-top: 12px;
+  }
+
+  .footer_content {
+    padding-block: 38px;
+  }
+
+  .footer_navbar {
+    width: 40%;
+    order: 4;
+  }
+
+  .footer_socials {
+    width: 40%;
+    order: 2;
+  }
+
+  .social_link {
+    width: 24px;
+    height: 24px;
+  }
+  .social_icon {
+    width: 20px;
+    height: 20px;
+}
+  .contact_left {
+    width: 100%;
+  }
+
+  .contact_right {
+ display: none;
+  }
+
+  .contact_inner {
+    flex-wrap: wrap;
+  }
+  .why_inner {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .why_card {
+    padding: 20px;
+  }
+  .contact_wrapper {
+    padding: 12px;
+}
+.contact_inner {
+  margin-bottom: 30px;
+}
+.contact_left .submit_btn{
+  margin-block: 10px;
+}
+.login_signup_form {
+  margin-block: 40px;
+}
+
+}
+
+/* media query 575 */
+@media (max-width: 575px) {
+  .sec_content {
+    padding: 12px;
+  }
+
+  .sub_title {
+    margin-bottom: 8px;
+  }
+
+  .banner {
+    height: 300px;
+  }
+
+  .banner_desc {
+    font-size: 16px;
+  }
+
+  .heading {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .why {
+    margin-block: 32px;
+  }
+
+  .why_card {
+    padding: 12px;
+  }
+
+  .testimonial {
+    margin-block: 0 32px;
+  }
+
+  .playing_inner {
+    padding: 12px;
+  }
+
+  .playing_title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .playing_desc {
+    margin-bottom: 8px;
+  }
+
+  .singup {
+    margin-bottom: 24px;
+  }
+
+  .faq_wrapper {
+    margin: 24px auto;
+    padding: 12px;
+  }
+
+  .faq {
+    margin-bottom: 32px;
+  }
+
+  .playing {
+    margin-top: 32px;
+  }
+
+  .testimonial_wrapper {
+    padding: 8px;
+  }
+
+  .playing_item {
+    margin-left: 12px;
+  }
+
+  .playing_subTitle {
+    font-size: 16px;
+  }
+
+  .why_imgSec {
+    width: 54px;
+    height: 54px;
+  }
+
+  .why_img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .pages-banner {
+    height: 300px;
+  }
+
+  .banner-content h1 {
+    font-size: 30px;
+  }
+
+  .singup_heading {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .header_navbar {
+    max-width: 100%;
+  }
+
+  .banner_btns {
+    gap: 1rem;
+  }
+
+  .banner_heading {
+    font-size: 32px;
+  }
+
+  .banner_btns {
+    margin-top: 20px;
+  }
+
+  .banner_right {
+    height: 550px;
+  }
+
+  .singup_email {
+    width: 100%;
+    gap: 4px;
+  }
+
+  .welcome_heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .singup_tobar {
+    margin-bottom: 50px;
+  }
+
+  .leagues_left {
+    height: 600px;
+  }
+
+  .footer_title {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  .footer_link {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+
+  .singup_left {
+    height: 800px;
+  }
+
+  .welcome_desc {
+    font-size: 16px;
+  }
+
+  .leagues_inner {
+    gap: 12px;
+  }
+
+  .footer_left {
+    width: 100%;
+  }
+
+  .footer_navbar {
+    width: 100%;
+    order: 4;
+  }
+
+  .footer_content {
+    padding-block: 24px;
+  }
+
+  .footer_socials,.social_iconWrapp {
+    width: 100%;
+    order: 4;
+  }
+
+  .footer_social {
+    padding: 4px;
+  }
+
+  .form_bg .container .form_container {
+    padding: 30px 14px;
+  }
+
+  .form-container {
+    padding: 0px;
+  }
+
+  .navbar {
+    padding: 20px 0;
+  }
+
+  .banner-right {
+    height: 360px;
+  }
+
+  .header_list {
+    width: 100%;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .header_right {
+    margin: 0 auto;
+  }
+  .contact_wrapper {
+    padding: 10px;
+}
+
+  #login-signup {
+    padding: 0px;
+  }
+
+  .footer_btmSec {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact_left .submit_btn{
+    margin-block: 4px;
+  }
+  .login_signup_form {
+    margin-block: 32px;
+  }
+  .disclaimer h3 {
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+.playing_img {
+  height: 300px;
+}
+.singup_form {
+  flex-wrap: wrap;
+}
+}
+
+/*==============================>>> */
+
+
+@media screen and (max-width:1200px) {
+  .custom-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    padding: 50px;
+    background-color: black;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+    z-index: 100;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .menuToggle .custom-menu {
+    transform: translateX(0);
+    justify-content: flex-start;
+  }
+
+  .custom-menu ul {
+    flex-direction: column;
+
+  }
+
+  .custom-toggler {
+    display: block;
+  }
+
+  .custom-closer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    text-align: end;
+    z-index: 55;
+    font-size: 21px;
+    height: 20px;
+    width: 20px;
+  }
+
+}
