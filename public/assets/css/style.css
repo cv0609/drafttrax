@@ -235,14 +235,17 @@ textarea::placeholder {
 
 .header_logoLnk {
   background-image: url(../images/logo.svg);
-  height: 65px;
-  width: 130px;
+  height: 70px;
+  width: 250px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   display: block;
 }
 
+.contact .para {
+  color:var(--black-color);
+}
 .header_navbar {
   /* width: 75%; */
   display: flex;
@@ -805,8 +808,8 @@ textarea::placeholder {
 
 .footer_icon {
   background-image: url("../images/logo.svg");
-  height: 65px;
-  width: 140px;
+  height: 70px;
+  width: 250px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -3044,6 +3047,7 @@ table tr {
   border-top-right-radius: 14px;
   display: flex;
   justify-content: space-around;
+  border-bottom: 1px solid #fff;
 }
 
 .matche-det table {
@@ -3076,7 +3080,7 @@ table tr {
 }
 
 .toggle-target a {
-  color: #000;
+  color: white;
   font-size: 18px;
   padding: 10px 30px;
   font-weight: 600;
@@ -3290,12 +3294,13 @@ section.my-profile {
 }
 
 .profile-side {
-  width: 33%;
+  width: 30%;
   /* border: 5px solid #12e1b9; */
   border: 5px solid var(--pre-blue);
   box-shadow: 0 3px 6px rgb(0 0 0 / 0%), 0 3px 6px rgb(0 0 0 / 16%);
   padding: 20px 10px;
   border-radius: 20px 0 0 20px;
+  margin-right: 10px;
 }
 
 .col-sec {
@@ -3469,6 +3474,7 @@ span.edit_pan i {
 
 a.tab.active {
   background: #fff;
+  color: var(--black-color);
 }
 
 .plyr-headr {
@@ -3678,6 +3684,10 @@ td.player-name p {
 
 .fusball_leagues table {
   position: relative;
+  box-shadow: #2955bb 0px 0px 5px;
+}
+table.dataTable>thead>tr>th, table.dataTable>thead>tr>td {
+  padding: 20px !important;
 }
 
 .matches thead tr th:nth-child(2) {
@@ -4123,6 +4133,8 @@ span.alert {
   background-color: #2955bb0a;
   padding: 20px;
   position: relative;
+  border-radius: 0px 20px 20px 0px;
+  border: 5px solid var(--pre-blue);
 }
 
 .mmy-profile-inner .col-sec span.alert.alert-success.col-md-12.text-center.profile-success {

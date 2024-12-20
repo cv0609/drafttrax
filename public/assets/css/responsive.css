@@ -2,17 +2,8 @@
   .banner_left {
     padding-inline: 1rem;
   }
-
-  .header_logoLnk {
-    width: 100px;
-  }
-
   .playing {
     margin-top: 70px;
-  }
-
-  .footer_icon {
-    width: 100px;
   }
 }
 
@@ -156,6 +147,9 @@
   .faq {
     margin-bottom: 60px;
   }
+  section.my-profile {
+    padding-top: 100px;
+}
 
   .testimonial {
     margin-block: 0 60px;
@@ -229,6 +223,10 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 11px;
   }
+  .header_logoLnk {
+    height: 60px;
+    width: 210px;
+}
 
   .sec_content {
     padding: 20px;
@@ -243,6 +241,9 @@
     font-size: 22px;
     margin-block: 8px;
   }
+  section.my-profile {
+    padding-top: 60px;
+}
 
   .sub_title {
     margin-bottom: 12px;
@@ -676,7 +677,28 @@
   .login_signup_form {
     margin-block: 40px;
   }
-
+  .mmy-profile-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .mmy-profile-inner .col-sec {
+border-radius: 20px;
+  }
+  section.my-profile {
+    padding-top: 50px;
+}
+.profile-side,.col-sec{
+  width: 100%;
+}
+.profile-side {
+  border-radius: 20px;
+}
+.mmy-profile-inner {
+  margin-bottom: 30px;
+}
+.user-content-update {
+  margin-top: 20px;
+}
 }
 
 @media (max-width: 575px) {
@@ -684,9 +706,7 @@
     margin: 0 auto;
   }
 
-  .mmy-profile-inner {
-    flex-direction: column;
-  }
+  
 
   .profile-side {
     width: 100%;
@@ -1010,4 +1030,9 @@
     width: 20px;
   }
 
+}
+@media (max-width:480px) {
+  .header_logoLnk {
+    width: 170px;
+}
 }

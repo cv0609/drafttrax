@@ -9,7 +9,8 @@
         <h1 class="heading banner_heading">
         Personal Data Policy
         </h1>
-        <p class="banner_desc">At Draft Trax, we are committed to safeguarding your personal data and respecting your privacy. This Personal Data Policy outlines how we collect, use, store, and protect your personal data when you access or use our website, mobile applications, and services related to fantasy football, fantasy sports, and fantasy leagues (collectively referred to as the "Services"). By using our Services, you consent to the practices outlined in this policy.
+        <p class="banner_desc">
+            At Draft Trax, we are committed to safeguarding your personal data and respecting your privacy. This Personal Data Policy outlines how we collect, use, store, and protect your personal data when you access or use our website, mobile applications, and services related to fantasy football, fantasy sports, and fantasy leagues (collectively referred to as the "Services"). By using our Services, you consent to the practices outlined in this policy.
 
         </p>
 
@@ -21,13 +22,9 @@
             <div class="personalData_content sec_content">
 
                 <h3 class="sec_title">1. Introduction</h3>
-                <p class="sec_desc">Draft Trax understands that the
-                    protection of your Personal Data Policy is a fundamental
-                    concern. We are fully committed to complying with
-                    applicable data protection laws, including the
-                    General Data Protection Regulation (GDPR), the
-                    California Consumer Privacy Act (CCPA), and other
-                    relevant privacy laws</p>
+                <p class="sec_desc">
+                Draft Trax understands that the protection of your personal data is a fundamental concern. We are fully committed to complying with applicable data protection laws, including the General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), and other relevant privacy laws.
+                </p>
                 <p class="sec_desc">This Personal Data Policy 
                     explains:</p>
                 <ul class="sec_list">
@@ -224,12 +221,12 @@
                     including direct marketing.</p>
                 <h4 class="sub_title">e. Portability</h4>
                 <p class="sec_desc">You have the right to request the
-                    transfer of your Personal Data Policyin a structured,
+                    transfer of your Personal Data Policy in a structured,
                     commonly used, and machine-readable format to
                     another organization, where applicable.</p>
                 <h4 class="sub_title">f. Objection</h4>
                 <p class="sec_desc">You can object to the processing of
-                    your Personal Data Policyfor certain purposes, including
+                    your Personal Data Policy for certain purposes, including
                     for direct marketing.</p>
                 <h4 class="sub_title">g. Withdrawal of Consent</h4>
                 <p class="sec_desc">If we are relying on your consent to
@@ -250,21 +247,21 @@
                     our Services, you consent to the transfer of your
                     data to the United States.</p>
                 <h3 class="sec_title">8. Retention of Personal Data</h3>
-                <p class="sec_desc">We retain your Personal Data Policyonly
+                <p class="sec_desc">We retain your Personal Data Policy only
                     for as long as necessary to fulfill the purposes
                     outlined in this policy, unless a longer retention
                     period is required or permitted by law. Once your
-                    Personal Data Policyis no longer needed, we will securely
+                    Personal Data Policy is no longer needed, we will securely
                     delete or anonymize it.</p>
                 <h3 class="sec_title">9. Children’s Privacy</h3>
                 <p class="sec_desc">Draft Trax does not knowingly
-                    collect Personal Data Policyfrom individuals under the age
+                    collect Personal Data Policy from individuals under the age
                     of 13. If we learn that we have collected personal
                     data from a child under 13, we will take steps to
                     delete such data as soon as possible</p>
                 <h3 class="sec_title">10. Changes to This Policy</h3>
                 <p class="sec_desc">We may update or modify this
-                    Personal Data PolicyPolicy from time to time. Any changes
+                    Personal Data Policy from time to time. Any changes
                     will be effective immediately upon posting the
                     updated policy on our website, and the “Effective
                     Date” will reflect the most recent revision. We

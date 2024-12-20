@@ -67,16 +67,16 @@
                     <h4 class="footer_title">Social link</h4>
                     <div class="footer_socialsWrapp">
                         <div class="footer_social">
-                            <a href="https://www.facebook.com/" target="__blank" class="social_link social_link--fb"></a>
+                            <a href="https://www.facebook.com/" target="_blank" class="social_link social_link--fb"></a>
                         </div>
                         <div class="footer_social">
-                            <a href="https://www.instagram.com" target="__blank" class="social_link social_link--inta"></a>
+                            <a href="https://www.instagram.com" target="_blank" class="social_link social_link--inta"></a>
                         </div>
                         <div class="footer_social">
-                            <a href="https://x.com" target="__blank" class="social_link social_link--twitter"></a>
+                            <a href="https://x.com" target="_blank" class="social_link social_link--twitter"></a>
                         </div>
                         <div class="footer_social">
-                            <a href="https://www.linkedin.com/" target="__blank" class="social_link social_link--linkedin"></a>
+                            <a href="https://www.linkedin.com/" target="_blank" class="social_link social_link--linkedin"></a>
                         </div>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                 <div class="footer_btmSec">
                     <div class="footer_copyRight">
                         <p>
-                            Copyright © 2024 , <a href="{{ route('home') }}">drafttrax</a>All
+                            Copyright © 2024 , <a href="{{ route('home') }}">drafttrax </a>All
                             Rights
                             Reserved.
                         </p>
