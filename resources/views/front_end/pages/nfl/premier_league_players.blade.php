@@ -127,7 +127,7 @@
                                 </tbody>
                             </table>
                         </div>
-                       
+
                     </div>
                 </div>
 
@@ -182,7 +182,7 @@
                                 </tbody>
                             </table>
                         </div>
-                       
+
                     </div>
                 </div>
 
@@ -237,7 +237,7 @@
                                 </tbody>
                             </table>
                         </div>
-                       
+
                     </div>
                 </div>
 
@@ -292,7 +292,7 @@
                                 </tbody>
                             </table>
                         </div>
-                       
+
                     </div>
                 </div>
 
@@ -347,7 +347,7 @@
                                 </tbody>
                             </table>
                         </div>
-                       
+
                     </div>
                 </div>
 
@@ -402,7 +402,7 @@
                                 </tbody>
                             </table>
                         </div>
-                       
+
                     </div>
                 </div>
 
@@ -457,7 +457,7 @@
                                 </tbody>
                             </table>
                         </div>
-                       
+
                     </div>
                 </div>
 
@@ -512,7 +512,7 @@
                                 </tbody>
                             </table>
                         </div>
-                       
+
                     </div>
                 </div>
 
@@ -567,7 +567,7 @@
                                 </tbody>
                             </table>
                         </div>
-                       
+
                     </div>
                 </div>
 
@@ -622,7 +622,7 @@
                                 </tbody>
                             </table>
                         </div>
-                       
+
                     </div>
                 </div>
 
@@ -677,7 +677,7 @@
                                 </tbody>
                             </table>
                         </div>
-                       
+
                     </div>
                 </div>
 
@@ -692,18 +692,47 @@
     </div>
 </section>
 
-<div id="errorModal" class="modal">
-    <div class="modal-content">
-        <div class="modal-image">
-            <img src="{{asset('assets/images/x.svg')}}" alt="error">
-        </div>
-        <span class="close-button"><img src="{{asset('assets/images/modal-close.png')}}" alt="" class="tab-close"></span>
-        <p id="cap-message"></p>
-        <div class="ok-btn">
-            <button class="ok-button">OK</button>
+<div class="custom-model-main error-model" id="errorModal" style="display: none;">
+    <div class="custom-model-inner">
+        <div class="close-btn">×</div>
+        <div class="custom-model-wrap">
+            <div class="pop-up-content-wrap">
+                <div class="error-icon">
+                    <!-- Error Icon (Red Cross) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="red" viewBox="0 0 24 24">
+                        <path d="M12 10.586l4.95-4.95 1.414 1.414L13.414 12l4.95 4.95-1.414 1.414L12 13.414l-4.95 4.95-1.414-1.414L10.586 12 5.636 7.05l1.414-1.414L12 10.586z"/>
+                    </svg>
+                </div>
+                <h3> Error Occurred </h3>
+                <p id="error-message"></p>
+            </div>
         </div>
     </div>
+    <div class="bg-overlay"></div>
 </div>
+
+<div class="alert-msg">
+    <div class="modal fade" id="capModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-x"></i>
+            </button>
+            </div>
+            <div class="modal-body">
+             <span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#d30f0f"><path d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Zm40 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+             </span>
+                <h4 id="cap-message"></h4>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" id="cap-ok" data-bs-dismiss="modal">ok</button>
+            </div>
+        </div>
+        </div>
+    </div>
+ </div>
 
 @endsection
 
@@ -725,153 +754,133 @@
         $(sel).addClass('active');
     });
 
+    $('#cap-ok').on('click', function() {
+         $('#capModal').modal('hide');
+    });
+
+    $('.btn-close').on('click', function() {
+         $('#capModal').modal('hide');
+    });
 
 
-        var errorModal = document.getElementById("errorModal");
-        var closeButton = document.querySelector(".close-button");
-        var okButton = document.querySelector(".ok-button");
 
-        function showModal(message) {
-            $("#cap-message").html(message);
-            $("#errorModal").modal('show');
-            // errorModal.classList.add("show-modal");
+
+    var myTeam = @json(Session::get('myTeam', []));
+
+    $('.tbody tr').each(function() {
+        var row = $(this);
+        var leagueId = "{{$matchDetails[0]->league->league_id}}";
+
+        var teamId = row.data('team-id');
+        var playerId = row.data('player-id');
+        var playerRole = row.data('player-role');
+        var playerName = row.data('player-name');
+
+        var playerExists = myTeam.some(function(player) {
+        return player.team_id == teamId && player.player_id == playerId && player.player_role == playerRole && player.player_name == playerName && player.league_id == leagueId;
+        });
+
+        if (playerExists) {
+            console.log(row,'playerExists');
+            console.log(playerExists,'playerExists');
+            row.find('.plus').addClass('d-none');
+            row.find('.minus').removeClass('d-none');
+        } else {
+            row.find('.plus').removeClass('d-none');
+            row.find('.minus').addClass('d-none');
         }
+    });
 
-        function hideModal() {
-            // errorModal.classList.remove("show-modal");
-            $("#errorModal").modal('hide');
+    $('.next-btn').click(function(e) {
+    e.preventDefault();
 
+    var nextBtn = $(this);
+
+    $.get("{{ route('current-team-count') }}", function(data, status) {
+        if (data.success == true && data.count != 5) {
+            // $("#error-message").html('Your team must have exactly 5 players.');
+            // alert('Your team must have exactly 5 players.');
+
+            $("#cap-message").html('Your team must have exactly 5 players.');
+            $('#capModal').modal('show');
+            return false;
+
+        } else {
+            window.location.href = nextBtn.attr('href');
         }
+    });
+    });
 
-        closeButton.addEventListener("click", hideModal);
-        okButton.addEventListener("click", hideModal);
+    $(document).on('click', '.player-toggle', function() {
 
-        // Hide modal when clicking outside the modal
-        window.addEventListener("click", function (event) {
-            if (event.target === errorModal) {
-                hideModal();
+        var team_id = $(this).closest('tr').data('team-id');
+        var player_id = $(this).closest('tr').data('player-id');
+        var player_role = $(this).closest('tr').data('player-role');
+        var leagueId = "{{$matchDetails[0]->league->league_id}}";
+        var player_name = $(this).closest('tr').data('player-name');
+        var team_logo = $(this).closest('tr').data('team-logo');
+        var match_id = $(this).closest('tr').data('match-id');
+        var team_name = $(this).closest('tr').data('team-name');
+        var homeTeamId = $(this).closest('tr').data('home-team');
+        var awayTeamId = $(this).closest('tr').data('away-team');
+        var dbMatchId = $(this).closest('tr').data('slug-matchid');
+
+        var button = $(this); // Store reference to the clicked button
+        var isPlus = button.hasClass('plus'); // Check if the clicked button is a "plus" button
+        var event = $(this).data('event');
+        var formData = {
+            team_id: team_id,
+            player_id: player_id,
+            player_role: player_role,
+            leagueId: leagueId,
+            player_name: player_name,
+            event : event,
+            team_logo : team_logo,
+            match_id:match_id,
+            team_name:team_name,
+            homeTeamId:homeTeamId,
+            awayTeamId:awayTeamId,
+            dbMatchId:dbMatchId,
+        };
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
 
-
-        var myTeam = @json(Session::get('myTeam', []));
-
-        $('.tbody tr').each(function () {
-            var row = $(this);
-            var leagueId = "{{$matchDetails[0]->league->league_id}}";
-
-            var teamId = row.data('team-id');
-            var playerId = row.data('player-id');
-            var playerRole = row.data('player-role');
-            var playerName = row.data('player-name');
-
-            var playerExists = myTeam.some(function (player) {
-                return player.team_id == teamId && player.player_id == playerId && player
-                    .player_role == playerRole && player.player_name == playerName && player
-                    .league_id == leagueId;
-            });
-
-            if (playerExists) {
-                row.find('.plus').css('display', 'none');
-                row.find('.minus').css('display', 'block');
-            } else {
-                row.find('.plus').css('display', 'block');
-                row.find('.minus').css('display', 'none');
-            }
-        });
-
-        $('.next-btn').click(function (e) {
-            e.preventDefault();
-
-            var nextBtn = $(this);
-
-            $.get("{{ route('current-team-count') }}", function (data, status) {
-
-                if (data.success == true && data.count != 11) {
-                    // $("#error-message").html('Your team must have exactly 5 players.');
-                    showModal('Your team must have exactly 11 players');
-
-                    // $("#cap-message").html('Your team must have exactly 5 players.');
-                    // $('#capModal').modal('show');
-                    return false;
-
-                } else {
-                    window.location.href = nextBtn.attr('href');
-                }
-            });
-        });
-
-        $(document).on('click', '.player-toggle', function () {
-
-            var team_id = $(this).closest('tr').data('team-id');
-            var player_id = $(this).closest('tr').data('player-id');
-            var player_role = $(this).closest('tr').data('player-role');
-            var leagueId = "{{$matchDetails[0]->league->league_id}}";
-            var player_name = $(this).closest('tr').data('player-name');
-            var team_logo = $(this).closest('tr').data('team-logo');
-            var match_id = $(this).closest('tr').data('match-id');
-            var team_name = $(this).closest('tr').data('team-name');
-            var homeTeamId = $(this).closest('tr').data('home-team');
-            var awayTeamId = $(this).closest('tr').data('away-team');
-            var dbMatchId = $(this).closest('tr').data('slug-matchid');
-
-            var button = $(this); // Store reference to the clicked button
-            var isPlus = button.hasClass('plus'); // Check if the clicked button is a "plus" button
-            var event = $(this).data('event');
-            var formData = {
-                team_id: team_id,
-                player_id: player_id,
-                player_role: player_role,
-                leagueId: leagueId,
-                player_name: player_name,
-                event: event,
-                team_logo: team_logo,
-                match_id: match_id,
-                team_name: team_name,
-                homeTeamId: homeTeamId,
-                awayTeamId: awayTeamId,
-                dbMatchId: dbMatchId,
-            };
-
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            });
-
-            $.ajax({
-                url: "{{ route('create-team') }}",
-                type: 'POST',
-                data: formData,
-                success: function (response) {
-                    if (response.success == true) {
-                        if (isPlus) {
-
-                            button.css('display', 'none');
-                            button.closest('td').find('.minus').css('display', 'block');
-                            button.parent('td').parent('tr').addClass('select-player');
-                        } else {
-                            button.css('display', 'none');
-                            button.closest('td').find('.plus').css('display', 'block');
-                            button.parent('td').parent('tr').removeClass('select-player');
-
-                        }
+        $.ajax({
+        url: "{{ route('create-team') }}",
+        type: 'POST',
+        data: formData,
+        success: function(response) {
+                if(response.success == true){
+                    if (isPlus) {
+                    button.addClass('d-none');
+                    button.closest('td').find('.minus').removeClass('d-none');
+                    button.parent('td').parent('tr').addClass('select-player');
                     } else {
-                        // $("#error-message").html(response.message);
-                        // $("#errorModal2").modal('show');
-                        // alert(response.message);
-                        showModal(response.message);
+                    button.addClass('d-none');
+                    button.closest('td').find('.plus').removeClass('d-none');
+                    button.parent('td').parent('tr').removeClass('select-player');
 
-                        // $("#cap-message").html(response.message);
-                        // $('#capModal').modal('show');
-                        return false;
                     }
-                },
-                error: function (xhr, status, error) {
-                    console.error('Error:', error);
+                } else {
+                    // $("#error-message").html(response.message);
+                    // $("#errorModal2").modal('show');
+                    // alert(response.message);
+
+                    $("#cap-message").html(response.message);
+                    $('#capModal').modal('show');
+                    return false;
                 }
-            });
+        },
+        error: function(xhr, status, error) {
+                console.error('Error:', error);
+        }
         });
+    });
+
 
 
 
@@ -880,21 +889,21 @@
 </script>
 
 <script>
+
     // Log In Button
-    document.querySelector('#login-click').addEventListener('click', function () {
+    document.querySelector('#login-click').addEventListener('click', function() {
         document.querySelector('.log-in-model').classList.add('model-open');
     });
 
     // Close Button and Overlay for both Sign Up and Log In
-    document.querySelectorAll('.close-btn, .bg-overlay').forEach(function (element) {
-        element.addEventListener('click', function () {
-            document.querySelectorAll('.custom-model-main').forEach(function (modal) {
+    document.querySelectorAll('.close-btn, .bg-overlay').forEach(function(element) {
+        element.addEventListener('click', function() {
+            document.querySelectorAll('.custom-model-main').forEach(function(modal) {
                 modal.classList.remove('model-open');
             });
         });
     });
 
-</script>
-
+    </script>
 
 @endsection

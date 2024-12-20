@@ -23,4 +23,5 @@
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/data-table.css') }}">
     {{-- <link rel="stylesheet" href="//cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css"> --}}
+
 </head>

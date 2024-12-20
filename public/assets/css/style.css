@@ -3103,7 +3103,7 @@ table tr {
 
 .credits_points button.minus {
   border-color: #e71e3c;
-  display: none;
+  /* display: none; */
 }
 
 .credits_points button.plus {

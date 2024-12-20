@@ -8,4 +8,4 @@
     <!-- main scripting link -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
     <script src="{{ asset('assets/js/data-table.js') }}" ></script>
-    {{-- <script src="//cdn.datatables.net/2.1.8/js/dataTables.min.js" ></script> --}}
+
