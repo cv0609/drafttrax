@@ -59,7 +59,7 @@
                                         <!-- <span>BL</span> -->
                                     </div>
                                     <h6>{{ $match->home_team_name }}</h6>
-                                    <!-- <a href="matches-details.html"></a> -->
+                                    {{-- <a href="javascript:void(0)"></a> --}}
 
                                 </td>
                                 <td>
@@ -97,18 +97,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
-  
+
         // Initialize DataTable
         let table = new DataTable('#myTable');
-        $(".matche-main").on('click',function(){
-            alert("OK");
-            var matcheId = $(this).data('fixture-id'); // Get match ID
-            var url = "{{ route('matche-detail', [':matcheId']) }}"; // Dynamic URL
-            url = url.replace(':matcheId', matcheId); // Replace placeholder
-            window.location.href = url; // Redirect
-        })
+
         // Event delegation for dynamically created elements (like match rows)
         $(document).on('click', '.matche-main', function () {
+
             var matcheId = $(this).data('fixture-id'); // Get match ID
             var url = "{{ route('matche-detail', [':matcheId']) }}"; // Dynamic URL
             url = url.replace(':matcheId', matcheId); // Replace placeholder
@@ -149,7 +144,7 @@
 
         // Initial lazy load
         lazyLoading();
-  
+
 
 </script>
 @endsection
