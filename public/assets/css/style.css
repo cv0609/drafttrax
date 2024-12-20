@@ -3024,6 +3024,7 @@ table tr td a::before {
 
 table tr {
   position: relative;
+  cursor: pointer;
 }
 
 .tab-content {
@@ -3092,6 +3093,9 @@ table tr {
   height: 25px;
   line-height: 1;
   right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 3px;
 }
 
 .credits_points button.minus {
@@ -3290,7 +3294,6 @@ section.my-profile {
   width: 33%;
   /* border: 5px solid #12e1b9; */
   border: 5px solid var(--pre-blue);
-  height: 450px;
   box-shadow: 0 3px 6px rgb(0 0 0 / 0%), 0 3px 6px rgb(0 0 0 / 16%);
   padding: 20px 10px;
   border-radius: 20px 0 0 20px;
@@ -4085,7 +4088,7 @@ fieldset {
 }
 
 .banner_myProfile {
-  background-image: url("../images/my-profile.jpg");
+  background-image: url("../images/playin-guide1.jpg");
 }
 
 .banner_myMatches {
@@ -4132,4 +4135,36 @@ span.alert {
 .user-content-box button {
   margin-left: 0;
 }  
+td.league-logo img {
+  max-width: 60px;
+}
 /*  */
+
+.modal-content {
+  max-width: 500px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.ok-btn button {
+  color: #fff;
+  background-color: #2955bb;
+  border: none;
+  padding: 11px 30px !important;
+  width: auto;
+  font-size: 17px;
+  font-weight: 600;
+  border: 1px solid #2955bb;
+  transition: 0.3s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+  -moz-transition: 0.3s all ease-in-out;
+  -ms-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+}
+
+.ok-btn {
+  padding: 10px;
+  text-align: center;
+}

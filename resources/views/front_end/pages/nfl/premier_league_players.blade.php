@@ -127,9 +127,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="team-btns">
-                            <a href="{{ route('my-team') }}" class="next-btn">next</a>
-                        </div>
+                       
                     </div>
                 </div>
 
@@ -184,9 +182,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="team-btns">
-                            <a href="{{ route('my-team') }}" class="next-btn">next</a>
-                        </div>
+                       
                     </div>
                 </div>
 
@@ -241,9 +237,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="team-btns">
-                            <a href="{{ route('my-team') }}" class="next-btn">next</a>
-                        </div>
+                       
                     </div>
                 </div>
 
@@ -298,9 +292,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="team-btns">
-                            <a href="{{ route('my-team') }}" class="next-btn">next</a>
-                        </div>
+                       
                     </div>
                 </div>
 
@@ -355,9 +347,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="team-btns">
-                            <a href="{{ route('my-team') }}" class="next-btn">next</a>
-                        </div>
+                       
                     </div>
                 </div>
 
@@ -412,9 +402,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="team-btns">
-                            <a href="{{ route('my-team') }}" class="next-btn">next</a>
-                        </div>
+                       
                     </div>
                 </div>
 
@@ -469,9 +457,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="team-btns">
-                            <a href="{{ route('my-team') }}" class="next-btn">next</a>
-                        </div>
+                       
                     </div>
                 </div>
 
@@ -526,9 +512,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="team-btns">
-                            <a href="{{ route('my-team') }}" class="next-btn">next</a>
-                        </div>
+                       
                     </div>
                 </div>
 
@@ -583,9 +567,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="team-btns">
-                            <a href="{{ route('my-team') }}" class="next-btn">next</a>
-                        </div>
+                       
                     </div>
                 </div>
 
@@ -640,9 +622,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="team-btns">
-                            <a href="{{ route('my-team') }}" class="next-btn">next</a>
-                        </div>
+                       
                     </div>
                 </div>
 
@@ -697,9 +677,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="team-btns">
-                            <a href="{{ route('my-team') }}" class="next-btn">next</a>
-                        </div>
+                       
                     </div>
                 </div>
 

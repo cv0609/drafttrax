@@ -128,9 +128,10 @@
   .form-container {
     padding: 20px;
   }
+
   .login_signup_form {
     margin-block: 70px;
-}
+  }
 }
 
 /* media query 1024 */
@@ -215,9 +216,10 @@
   .welcome_desc {
     font-size: 20px;
   }
+
   .login_signup_form {
     margin-block: 60px;
-}
+  }
 }
 
 /* media query 991 */
@@ -402,15 +404,18 @@
   .why_inner {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .contact_wrapper {
     padding: 20px;
-}
-.contact_inner {
-  margin-bottom: 40px;
-}
-.login_signup_form {
-  margin-block: 50px;
-}
+  }
+
+  .contact_inner {
+    margin-bottom: 40px;
+  }
+
+  .login_signup_form {
+    margin-block: 50px;
+  }
 
 }
 
@@ -619,21 +624,24 @@
     width: 24px;
     height: 24px;
   }
+
   .social_icon {
     width: 20px;
     height: 20px;
-}
+  }
+
   .contact_left {
     width: 100%;
   }
 
   .contact_right {
- display: none;
+    display: none;
   }
 
   .contact_inner {
     flex-wrap: wrap;
   }
+
   .why_inner {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
@@ -642,19 +650,38 @@
   .why_card {
     padding: 20px;
   }
+
   .contact_wrapper {
     padding: 12px;
-}
-.contact_inner {
-  margin-bottom: 30px;
-}
-.contact_left .submit_btn{
-  margin-block: 20px;
-}
-.login_signup_form {
-  margin-block: 40px;
+  }
+
+  .contact_inner {
+    margin-bottom: 30px;
+  }
+
+  .contact_left .submit_btn {
+    margin-block: 20px;
+  }
+
+  .login_signup_form {
+    margin-block: 40px;
+  }
+
 }
 
+@media (max-width: 575px) {
+  .mmy-profile-inner {
+    flex-direction: column;
+  }
+
+  .profile-side {
+    width: 100%;
+
+  }
+
+  .col-sec {
+    width: 100%;
+  }
 }
 
 /* media query 575 */
@@ -830,7 +857,8 @@
     padding-block: 24px;
   }
 
-  .footer_socials,.social_iconWrapp {
+  .footer_socials,
+  .social_iconWrapp {
     width: 100%;
     order: 4;
   }
@@ -864,9 +892,10 @@
   .header_right {
     margin: 0 auto;
   }
+
   .contact_wrapper {
     padding: 10px;
-}
+  }
 
   #login-signup {
     padding: 0px;
@@ -876,22 +905,27 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  .contact_left .submit_btn{
+
+  .contact_left .submit_btn {
     margin-block: 4px;
   }
+
   .login_signup_form {
     margin-block: 32px;
   }
+
   .disclaimer h3 {
     margin-bottom: 16px;
     font-size: 20px;
-}
-.playing_img {
-  height: 300px;
-}
-.singup_form {
-  flex-wrap: wrap;
-}
+  }
+
+  .playing_img {
+    height: 300px;
+  }
+
+  .singup_form {
+    flex-wrap: wrap;
+  }
 }
 
 /*==============================>>> */
