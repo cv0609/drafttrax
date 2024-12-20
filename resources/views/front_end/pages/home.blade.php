@@ -139,7 +139,7 @@
                     Sign up now!
                 </h3>
                 <form class="singup_form">
-                    <input type="email" placeholder="Enter Email Address" class="singup_input">
+                    <input type="email" placeholder="Enter Email Address" class="singup_input" required>
                     <input type="submit" value="Subscribe" class="subscribe_btn submit_btn btn ">
                 </form>
             </div>
