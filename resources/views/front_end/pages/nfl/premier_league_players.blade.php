@@ -797,11 +797,12 @@
     var nextBtn = $(this);
 
     $.get("{{ route('current-team-count') }}", function(data, status) {
-        if (data.success == true && data.count != 5) {
+
+        if (data.success == true && data.count != 11) {
             // $("#error-message").html('Your team must have exactly 5 players.');
             // alert('Your team must have exactly 5 players.');
 
-            $("#cap-message").html('Your team must have exactly 5 players.');
+            $("#cap-message").html('Your team must have exactly 11 players.');
             $('#capModal').modal('show');
             return false;
 
