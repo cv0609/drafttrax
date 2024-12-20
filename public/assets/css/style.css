@@ -329,6 +329,9 @@ textarea::placeholder {
   position: absolute;
   top: 24px;
   right: 15px;
+  filter: grayscale(1);
+  width: 20px;
+  height: 20px;
 }
 
 .close_menu {
