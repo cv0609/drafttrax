@@ -12,7 +12,9 @@
   .banner {
     height: 450px;
   }
-
+  .profile {
+    margin-left: 0;
+}
   .heading {
     font-size: 55px;
     margin-bottom: 28px;
@@ -725,6 +727,10 @@ border-radius: 20px;
     grid-template-columns: auto auto auto auto;
     gap: 11px;
   }
+  .avatar .dropdown {
+    left: 50%;
+    transform: translateX(-50%);
+}
 
   .toggle-target a {
     font-size: 16px;
