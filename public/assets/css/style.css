@@ -4217,7 +4217,7 @@ p.team_captain button {
   height: 25px;
   width: 25px;
   max-width: 25px;
-  border-color: #2955bb!important;
+  border-color: #2955bb !important;
   border-radius: 50%;
   padding: 5px;
   display: inline-flex;
@@ -4232,6 +4232,37 @@ p.team_captain button img {
   height: 100%;
   width: 100%;
 }
+
 .team-view-table span.c-logo {
   color: #fff;
+}
+
+.modal-header button i::before {
+  display: none;
+}
+
+.modal-body span svg {
+  max-width: 100px !important;
+  width: 100% !important;
+  height: 100px !important;
+  margin: 0 auto !important;
+}
+
+.modal-body span {
+  display: block;
+  text-align: center;
+}
+
+.modal-footer {
+  justify-content: center;
+}
+
+.modal-body h4 {
+  font-size: 22px;
+  text-align: center;
+  padding: 10px;
+}
+.modal-footer button:hover {
+  color: #2955bb;
+  border: 1px solid #2955bb;
 }
