@@ -118,7 +118,7 @@
                                             <button class="plus player-toggle" data-event="plus">
                                                 <img src="{{asset('assets/images/tab-plus.png')}}" alt="plus"
                                                     class="tab-plus"> </button>
-                                            <button class="minus player-toggle d-none" data-event="minus">
+                                            <button class="minus player-toggle " data-event="minus">
                                                 <img src="{{asset('assets/images/tab-minus.png')}}" alt="minus"
                                                     class="tab-minus"> </button>
                                         </td>
@@ -175,7 +175,7 @@
                                             <button class="plus player-toggle" data-event="plus">
                                                 <img src="{{asset('assets/images/tab-plus.png')}}" alt="plus"
                                                     class="tab-plus"> </button>
-                                            <button class="minus player-toggle d-none" data-event="minus">
+                                            <button class="minus player-toggle " data-event="minus">
                                                 <img src="{{asset('assets/images/tab-minus.png')}}" alt="minus"
                                                     class="tab-minus"> </button>
                                         </td>
@@ -232,7 +232,7 @@
                                             <button class="plus player-toggle" data-event="plus">
                                                 <img src="{{asset('assets/images/tab-plus.png')}}" alt="plus"
                                                     class="tab-plus"> </button>
-                                            <button class="minus player-toggle d-none" data-event="minus">
+                                            <button class="minus player-toggle " data-event="minus">
                                                 <img src="{{asset('assets/images/tab-minus.png')}}" alt="minus"
                                                     class="tab-minus"> </button>
                                         </td>
@@ -289,7 +289,7 @@
                                             <button class="plus player-toggle" data-event="plus">
                                                 <img src="{{asset('assets/images/tab-plus.png')}}" alt="plus"
                                                     class="tab-plus"> </button>
-                                            <button class="minus player-toggle d-none" data-event="minus">
+                                            <button class="minus player-toggle " data-event="minus">
                                                 <img src="{{asset('assets/images/tab-minus.png')}}" alt="minus"
                                                     class="tab-minus"> </button>
                                         </td>
@@ -346,7 +346,7 @@
                                             <button class="plus player-toggle" data-event="plus">
                                                 <img src="{{asset('assets/images/tab-plus.png')}}" alt="plus"
                                                     class="tab-plus"> </button>
-                                            <button class="minus player-toggle d-none" data-event="minus">
+                                            <button class="minus player-toggle " data-event="minus">
                                                 <img src="{{asset('assets/images/tab-minus.png')}}" alt="minus"
                                                     class="tab-minus"> </button>
                                         </td>
@@ -403,7 +403,7 @@
                                             <button class="plus player-toggle" data-event="plus">
                                                 <img src="{{asset('assets/images/tab-plus.png')}}" alt="plus"
                                                     class="tab-plus"> </button>
-                                            <button class="minus player-toggle d-none" data-event="minus">
+                                            <button class="minus player-toggle " data-event="minus">
                                                 <img src="{{asset('assets/images/tab-minus.png')}}" alt="minus"
                                                     class="tab-minus"> </button>
                                         </td>
@@ -460,7 +460,7 @@
                                             <button class="plus player-toggle" data-event="plus">
                                                 <img src="{{asset('assets/images/tab-plus.png')}}" alt="plus"
                                                     class="tab-plus"> </button>
-                                            <button class="minus player-toggle d-none" data-event="minus">
+                                            <button class="minus player-toggle " data-event="minus">
                                                 <img src="{{asset('assets/images/tab-minus.png')}}" alt="minus"
                                                     class="tab-minus"> </button>
                                         </td>
@@ -517,7 +517,7 @@
                                             <button class="plus player-toggle" data-event="plus">
                                                 <img src="{{asset('assets/images/tab-plus.png')}}" alt="plus"
                                                     class="tab-plus"> </button>
-                                            <button class="minus player-toggle d-none" data-event="minus">
+                                            <button class="minus player-toggle " data-event="minus">
                                                 <img src="{{asset('assets/images/tab-minus.png')}}" alt="minus"
                                                     class="tab-minus"> </button>
                                         </td>
@@ -574,7 +574,7 @@
                                             <button class="plus player-toggle" data-event="plus">
                                                 <img src="{{asset('assets/images/tab-plus.png')}}" alt="plus"
                                                     class="tab-plus"> </button>
-                                            <button class="minus player-toggle d-none" data-event="minus">
+                                            <button class="minus player-toggle " data-event="minus">
                                                 <img src="{{asset('assets/images/tab-minus.png')}}" alt="minus"
                                                     class="tab-minus"> </button>
                                         </td>
@@ -631,7 +631,7 @@
                                             <button class="plus player-toggle" data-event="plus">
                                                 <img src="{{asset('assets/images/tab-plus.png')}}" alt="plus"
                                                     class="tab-plus"> </button>
-                                            <button class="minus player-toggle d-none" data-event="minus">
+                                            <button class="minus player-toggle " data-event="minus">
                                                 <img src="{{asset('assets/images/tab-minus.png')}}" alt="minus"
                                                     class="tab-minus"> </button>
                                         </td>
@@ -688,7 +688,7 @@
                                             <button class="plus player-toggle" data-event="plus">
                                                 <img src="{{asset('assets/images/tab-plus.png')}}" alt="plus"
                                                     class="tab-plus"> </button>
-                                            <button class="minus player-toggle d-none" data-event="minus">
+                                            <button class="minus player-toggle " data-event="minus">
                                                 <img src="{{asset('assets/images/tab-minus.png')}}" alt="minus"
                                                     class="tab-minus"> </button>
                                         </td>
@@ -726,6 +726,7 @@
         </div>
     </div>
 </div>
+
 @endsection
 
 @section('custom-script')
@@ -754,11 +755,14 @@
 
         function showModal(message) {
             $("#cap-message").html(message);
-            errorModal.classList.add("show-modal");
+            $("#errorModal").modal('show');
+            // errorModal.classList.add("show-modal");
         }
 
         function hideModal() {
-            errorModal.classList.remove("show-modal");
+            // errorModal.classList.remove("show-modal");
+            $("#errorModal").modal('hide');
+
         }
 
         closeButton.addEventListener("click", hideModal);
