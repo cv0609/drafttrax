@@ -4279,3 +4279,7 @@ p.team_captain button img {
   padding: 10px;
   margin: 0 0 5px;
 }
+section.contact.section span.alert.alert-success.text-center {
+  left: 282px;
+  top: -41px;
+}
