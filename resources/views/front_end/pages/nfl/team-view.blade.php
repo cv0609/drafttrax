@@ -101,7 +101,7 @@
                                         <button class="plus player-toggle vice-cap-plus team-view-cls" data-event="vice_plus">
                                             <img src="{{asset('assets/images/tab-plus.png')}}" alt="plus" class="tab-plus"> </button>
                                         </button>
-                                        <button class="minus player-toggle vice-cap-minus team-view-cls" data-event="vice_minus">
+                                        <button class="minus player-toggle d-none vice-cap-minus team-view-cls" data-event="vice_minus">
                                             <img src="{{asset('assets/images/tab-minus.png')}}" alt="minus" class="tab-minus"> </button>
                                         </button>
                                     </p>
@@ -157,270 +157,214 @@
 @section('custom-script')
 
 <script>
-
-
-        var errorModal = document.getElementById("errorModal");
-        var loginModal = document.getElementById("loginModal");
-
-        // Function to show the error modal and set the message
-        function showModal(message) {
-            $("#cap-message").html(message);
-            errorModal.classList.add("show-modal");
-        }
-
-        // Function to show the login modal and set the message
-        function showLoginModal(message) {
-            $("#login-message").html(message);
-            $("#loginModal").modal('show');
-
-            //loginModal.classList.add("show-modal");
-        }
-
-        // Function to hide the modals
-        function hideModal(modal) {
-            modal.classList.remove("show-modal");
-        }
-
-        // Hide modal when the close button or ok button is clicked
-        $('.close-button').on('click', function () {
-            var modal = $(this).closest('.modal')[0]; // Get the closest modal
-            hideModal(modal);
-        });
-
-        $('.ok-button').on('click', function () {
-            var modal = $(this).closest('.modal')[0]; // Get the closest modal
-            hideModal(modal);
-        });
-
-        // Hide login modal when login button is clicked
-        $('#login-click').on('click', function () {
-            window.location.href = "{{ route('login') }}";
-        });
-
-        // Hide modal when clicking outside the modal
-        window.addEventListener("click", function (event) {
-            if (event.target === errorModal) {
-                hideModal(errorModal);
-            }
-            if (event.target === loginModal) {
-                hideModal(loginModal);
-            }
-        });
-
-
-
-        @if(Session::has('success'))
+    $(document).ready(function(){
+      @if(Session::has('success'))
         var flashMessage = "<?= Session::get('success') ?>";
         $("#success-message").html(flashMessage)
         $("#successModal").modal('show');
-        @endif
+      @endif
 
-        var myTeam = @json($myTeam);
+      var myTeam = @json($myTeam);
 
-        $('.tbody tr').each(function () {
-            var row = $(this);
-            // Retrieve data attributes from the row
-            var leagueId = row.find('.team_captain').data('league_id');
-            var matchId = row.find('.team_captain').data('match_id');
-            var teamId = row.find('.team_captain').data('team_id');
-            var playerId = row.find('.team_captain').data('player_id');
+      $('.tbody tr').each(function() {
+         var row = $(this);
+         // Retrieve data attributes from the row
+         var leagueId = row.find('.team_captain').data('league_id');
+         var matchId = row.find('.team_captain').data('match_id');
+         var teamId = row.find('.team_captain').data('team_id');
+         var playerId = row.find('.team_captain').data('player_id');
 
-            // Check for captain status
-            var isCaptain = myTeam.some(function (player) {
-                return player.league_id == leagueId &&
+         // Check for captain status
+         var isCaptain = myTeam.some(function(player) {
+             return player.league_id == leagueId &&
                     player.match_id == matchId &&
                     player.team_id == teamId &&
                     player.player_id == playerId &&
                     player.is_captain == '1';
-            });
+         });
 
-            // Check for vice-captain status
-            var isViceCaptain = myTeam.some(function (player) {
-                return player.league_id == leagueId &&
+         // Check for vice-captain status
+         var isViceCaptain = myTeam.some(function(player) {
+             return player.league_id == leagueId &&
                     player.match_id == matchId &&
                     player.team_id == teamId &&
                     player.player_id == playerId &&
                     player.is_vice_captain == '1';
-            });
+         });
 
-            // Show or hide buttons based on the player status
-            if (isCaptain) {
-                row.find('.team_captain .plus').css('display', 'none');
-                row.find('.team_captain .minus').css('display', 'block');
-            } else {
-                row.find('.team_captain .plus').css('display', 'block');
-                row.find('.team_captain .minus').css('display', 'none');
-            }
+         // Show or hide buttons based on the player status
+         if (isCaptain) {
+             row.find('.team_captain .plus').addClass('d-none');
+             row.find('.team_captain .minus').removeClass('d-none');
+         } else {
+             row.find('.team_captain .plus').removeClass('d-none');
+             row.find('.team_captain .minus').addClass('d-none');
+         }
 
-            if (isViceCaptain) {
-                row.find('.team_vice_captain .plus').css('display', 'none');
-                row.find('.team_vice_captain .minus').css('display', 'block');
-            } else {
-                row.find('.team_vice_captain .plus').css('display', 'block');
-                row.find('.team_vice_captain .minus').css('display', 'none');
-            }
-        });
+         if (isViceCaptain) {
+             row.find('.team_vice_captain .plus').addClass('d-none');
+             row.find('.team_vice_captain .minus').removeClass('d-none');
+         } else {
+             row.find('.team_vice_captain .plus').removeClass('d-none');
+             row.find('.team_vice_captain .minus').addClass('d-none');
+         }
+     });
 
-        $('#login-click').on('click', function () {
-            window.location.href = "{{ route('login') }}";
-        })
+      $('#login-click').on('click',function(){
+       //   window.location.href = "{{ route('login') }}";
+         $('#loginModal').modal('hide');
+       //   $('#log-in-model').css('display','block');
+       // document.querySelector('.log-in-now').addEventListener('click', function() {
+         //  document.querySelector('.log-in-model').classList.add('model-open');
+       // });
 
-        $('#save-team-btn').on('click', function (e) {
-            e.preventDefault();
+      })
 
-            $.ajax({
-                url: "{{ route('auth.check') }}",
-                method: 'GET',
-                headers: {
-                    'X-Requested-With': 'XMLHttpRequest'
-                },
-                success: function (data) {
+      $('#save-team-btn').on('click', function(e) {
+         e.preventDefault();
 
-                    if (data.captain != true) {
-                        var flashMessage = "Please select a captain.";
-                        //   alert(flashMessage);
-                        showModal(flashMessage);
-                        //   $("#cap-message").html(flashMessage);
-                        //   $('#errorModal').css('display', 'block'); // Show modal
-                        return false;
-                    } else if (data.vice_captain != true) {
-                        var flashMessage = "Please select a vice captain.";
-                        console.log('c');
-                        showModal(flashMessage);
-                        //   alert(flashMessage);
-                        //   $("#cap-message").html(flashMessage);
-                        //   $('#errorModal').css('display', 'block'); // Show modal
-                        return false;
-                    } else if (data.error == false) {
-                        console.log(data.error);
-                        console.log('w');
-                        var flashMessage = "You need to log in before making a team.";
-                        showLoginModal(flashMessage);
+         $.ajax({
+             url: "{{ route('auth.check') }}",
+             method: 'GET',
+             headers: {
+                 'X-Requested-With': 'XMLHttpRequest'
+             },
+             success: function(data) {
 
-                        //   $("#login-message").html(flashMessage);
-                        //   $('#loginModal').removeClass('d-none');
-                    } else {
-                        window.location.href = "{{ route('save-team') }}";
-                    }
+              if(data.captain != true){
+                   var flashMessage = "Please select a captain.";
+                   $("#cap-message").html(flashMessage);
+                   $('#capModal').modal('show');
+                   return false;
+              }else if(data.vice_captain != true){
+                   var flashMessage = "Please select a vice captain.";
+                   $("#cap-message").html(flashMessage);
+                   $('#capModal').modal('show');
+                   return false;
+              }else if(data.error == false){
+                   var flashMessage = "You need to log in before making a team.";
+                   $("#login-message").html(flashMessage)
+                   $('#loginModal').modal('show');
+              }else{
+                window.location.href = "{{ route('save-team') }}";
+              }
+             }
+         });
+     });
+
+       $.ajaxSetup({
+          headers: {
+             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+          }
+       });
+
+       $(document).on('click', '.player-toggle', function() {
+          var button = $(this);
+
+          var league_id = button.closest('p').data('league_id');
+          var match_id = button.closest('p').data('match_id');
+          var team_id = button.closest('p').data('team_id');
+          var player_id = button.closest('p').data('player_id');
+
+          if (button.hasClass('captain-plus')) {
+             var visibleMinusCount = $('.captain-minus').not('.d-none').length;
+
+             if (visibleMinusCount >= 1) {
+                var flashMessage = "Captain already selected.";
+                $("#cap-message").html(flashMessage);
+                console.log('aaaa');
+                $('#capModal').modal('show')
+                return false;
+             }
+          }
+
+          if (button.hasClass('vice-cap-plus')) {
+             var visibleMinusCount = $('.vice-cap-minus').not('.d-none').length;
+
+             if (visibleMinusCount >= 1) {
+                var flashMessage = "Vice Captain already selected.";
+                $("#cap-message").html(flashMessage);
+                $('#capModal').modal('show')
+                return false;
+             }
+          }
+
+          var event = $(this).data('event');
+
+          var formData = {
+             event : event,
+             league_id : league_id,
+             match_id : match_id,
+             team_id : team_id,
+             player_id : player_id,
+          };
+
+          $.ajax({
+             url: "{{ route('make.captain') }}",
+             type: 'POST',
+             data: formData,
+             success: function(response) {
+
+                if(event == 'cap_plus'){
+
+                   button.addClass('d-none');
+                   button.closest('td').find('.minus').removeClass('d-none');
+
+                }else if(event == 'cap_minus'){
+
+                   button.addClass('d-none');
+                   button.closest('td').find('.plus').removeClass('d-none');
+
                 }
-            });
-        });
 
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
+                if(event == 'vice_plus'){
 
-        $(document).on('click', '.player-toggle', function () {
-            var button = $(this);
+                 button.addClass('d-none');
+                 button.closest('td').find('.minus').removeClass('d-none');
 
-            var league_id = button.closest('p').data('league_id');
-            var match_id = button.closest('p').data('match_id');
-            var team_id = button.closest('p').data('team_id');
-            var player_id = button.closest('p').data('player_id');
+                }else if(event == 'vice_minus'){
 
-            if (button.hasClass('captain-plus')) {
+                   button.addClass('d-none');
+                   button.closest('td').find('.plus').removeClass('d-none');
 
-                var visibleMinusCount = $('.captain-minus').filter(function () {
-                    return $(this).css('display') !== 'none';
-                }).length;
-
-                if (visibleMinusCount >= 1) {
-                    var flashMessage = "Captain already selected.";
-                    showModal(flashMessage);
-                    //    $("#cap-message").html(flashMessage);
-                    //    $('#capModal').removeClass('d-none')
-                    return false;
                 }
-            }
+             },
+             error: function(xhr, status, error) {
+                   console.error('Error:', error);
+             }
+          });
+       });
 
-            if (button.hasClass('vice-cap-plus')) {
-                // var visibleMinusCount = $('.vice-cap-minus').not('.d-none').length;
+       $('#cap-ok').on('click', function() {
+          $('#capModal').modal('hide');
+       });
 
-                var visibleMinusCount = $('.vice-cap-minus').filter(function () {
-                    return $(this).css('display') !== 'none';
-                }).length;
+       $('.btn-close').on('click', function() {
+             $('#successModal').modal('hide');
+             $('#capModal').modal('hide');
+             $('#loginModal').modal('hide');
+       });
 
-                if (visibleMinusCount >= 1) {
-                    var flashMessage = "Vice Captain already selected.";
-                    showModal(flashMessage);
-                    //    $("#cap-message").html(flashMessage);
-                    //    $('#capModal').modal('show')
-                    return false;
-                }
-            }
-
-            var event = $(this).data('event');
-
-            var formData = {
-                event: event,
-                league_id: league_id,
-                match_id: match_id,
-                team_id: team_id,
-                player_id: player_id,
-            };
-
-            $.ajax({
-                url: "{{ route('make.captain') }}",
-                type: 'POST',
-                data: formData,
-                success: function (response) {
-
-                    if (event == 'cap_plus') {
-
-                        button.css('display', 'none');
-                        button.closest('td').find('.minus').css('display', 'block');
-
-                    } else if (event == 'cap_minus') {
-
-                        button.css('display', 'none');
-                        button.closest('td').find('.plus').css('display', 'block');
-
-                    }
-
-                    if (event == 'vice_plus') {
-
-                        button.css('display', 'none');
-                        button.closest('td').find('.minus').css('display', 'block');
-
-                    } else if (event == 'vice_minus') {
-
-                        button.css('display', 'none');
-                        button.closest('td').find('.plus').css('display', 'block');
-
-                    }
-                },
-                error: function (xhr, status, error) {
-                    console.error('Error:', error);
-                }
-            });
-        });
-
-        $('#cap-ok').on('click', function () {
-            $('#capModal').modal('hide');
-        });
-
-
-
-</script>
-
-<script>
-    // Log In Button
-    document.querySelector('#login-click').addEventListener('click', function () {
-        document.querySelector('.log-in-model').classList.add('model-open');
     });
+ </script>
 
-    // Close Button and Overlay for both Sign Up and Log In
-    document.querySelectorAll('.close-btn, .bg-overlay').forEach(function (element) {
-        element.addEventListener('click', function () {
-            document.querySelectorAll('.custom-model-main').forEach(function (modal) {
-                modal.classList.remove('model-open');
-            });
-        });
-    });
+ <script>
 
-</script>
+ // Log In Button
+ document.querySelector('#login-click').addEventListener('click', function() {
+     document.querySelector('.log-in-model').classList.add('model-open');
+ });
+
+ // Close Button and Overlay for both Sign Up and Log In
+ document.querySelectorAll('.close-btn, .bg-overlay').forEach(function(element) {
+     element.addEventListener('click', function() {
+         document.querySelectorAll('.custom-model-main').forEach(function(modal) {
+             modal.classList.remove('model-open');
+         });
+     });
+ });
+
+ </script>
 
 
 @endsection
