@@ -72,6 +72,8 @@
             </div>
             <div class="contact_content">
                 <div class="socials">
+                    <p class="sec_desc">Submit your message, and we’ll respond within 24-48 hours.
+                    </p>
                     <h4 class="sub_title">Social Media</h4>
                     <p class="sec_desc">Connect with us on social media for updates, tips, and announcements:</p>
                     <div class="socials_wrapper">
@@ -94,7 +96,7 @@
                 </div>
                 <h3 class="sec_title">Business Inquiries</h3>
                 <p class="sec_desc">For partnerships, media requests, or business opportunities, please contact us at
-                    📧 <a class="sec_email" href="mailto:partners@drafttrax.com.">partners@drafttrax.com.</a></p>
+                     <a class="sec_email" href="mailto:partners@drafttrax.com.">partners@drafttrax.com.</a></p>
                 <h3 class="sec_title">Need Help Fast?</h3>
 
                 <p class="sec_desc">Check out our Playing Guide for tips, guides, and troubleshooting advice on

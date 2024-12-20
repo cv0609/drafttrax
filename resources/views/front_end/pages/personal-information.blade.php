@@ -120,8 +120,8 @@
                     tailor our content and advertisements.</p>
                 <h3 class="sec_title">3. How We Use Your Personal
                     Data</h3>
-                <p class="sec_desc">We use your Personal Data Policyfor
-                    various purposes, including but not limited to:</p>
+                <p class="sec_desc">We use your personal data for various purposes, including but not limited to:
+                    </p>
                 <h4 class="sub_title">a. To Provide and Personalize
                     Services</h4>
                 <ul class="sec_list">
@@ -173,18 +173,11 @@
                 </ul>
                 <h3 class="sub_title">4. Data Sharing and
                     Disclosure</h3>
-                <p class="sec_desc">We respect your privacy and will not
-                    sell, rent, or share your Personal Data Policywith third
-                    parties, except in the following circumstances:</p>
+                <p class="sec_desc">We respect your privacy and will not sell, rent, or share your personal data with third parties, except in the following circumstances:
+                </p>
                 <h4 class="sub_title">a. Service Providers</h4>
-                <p class="sec_desc">We may share your data with trusted
-                    third-party service providers who assist in
-                    delivering our Services, such as payment processors,
-                    hosting services, email providers, and analytics
-                    tools. These providers are required to keep your
-                    Personal Data Policyconfidential and are only allowed to
-                    use it for the services they perform for Draft
-                    Trax.</p>
+                <p class="sec_desc">We may share your data with trusted third-party service providers who assist in delivering our Services, such as payment processors, hosting services, email providers, and analytics tools. These providers are required to keep your personal data confidential and are only allowed to use it for the services they perform for Draft Trax.
+                </p>
                 <h4 class="sub_title">b. Legal Obligations</h4>
                 <p class="sec_desc">We may disclose your personal data
                     if required to do so by law, in response to a legal

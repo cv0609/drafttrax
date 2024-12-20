@@ -357,6 +357,7 @@ textarea::placeholder {
 
 .playinGuide_banner {
   background-image: url("../images/playing_guide.jpg");
+  background-position: 100% 0%;
 
 }
 
@@ -1159,9 +1160,11 @@ textarea::placeholder {
   box-shadow: rgb(7 7 7 / 10%) 0px 7px 29px 0px
     /* box-shadow: rgba(215, 124, 141, 0.6) 0px 7px 29px 0px; */
 }
-.banner--contact{
+
+.banner--contact {
   background-image: url("../images/contact-banner.jpg");
 }
+
 .contact_inner {
   display: flex;
   justify-content: space-between;
@@ -1172,13 +1175,15 @@ textarea::placeholder {
   border: 1px solid #dee2e6;
   margin-bottom: 16px;
 }
+
 .contact_inner textarea:focus {
   color: var(--bs-body-color);
   background-color: var(--bs-body-bg);
   border-color: #86b7fe;
   outline: 0;
-  box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+  box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
 }
+
 .contact_left {
   width: 46%;
 }
@@ -1216,16 +1221,20 @@ textarea::placeholder {
 .contact_left .submit_btn {
   margin-top: 16px;
 }
-.socials{
+
+.socials {
   margin-top: 10px;
 }
-.socials_wrapper{
+
+.socials_wrapper {
   display: inline-flex;
   gap: 10px;
 }
-.socials .sub_title{
+
+.socials .sub_title {
   margin-bottom: 4px;
 }
+
 .social_iconWrapp {
   border: 1px solid var(--black-color);
   border-radius: 4px;
@@ -1236,16 +1245,20 @@ textarea::placeholder {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-.social_iconWrapp:hover{
+
+.social_iconWrapp:hover {
   background-color: var(--blue-light);
   border-color: var(--blue-light);
 }
-.social_iconWrapp:hover .social_icon{
+
+.social_iconWrapp:hover .social_icon {
   filter: invert(1);
 }
-.social_iconWrapp:hover .social_icon--twitter{
+
+.social_iconWrapp:hover .social_icon--twitter {
   filter: invert(0);
 }
+
 .social_icon {
   background-repeat: no-repeat;
   background-size: contain;
@@ -1258,16 +1271,19 @@ textarea::placeholder {
   transition: all 0.3s linear;
 }
 
-.social_icon--fb{
+.social_icon--fb {
   background-image: url("../images/fb.png");
 }
-.social_icon--twitter{
+
+.social_icon--twitter {
   background-image: url("../images/twitter.svg");
   filter: invert(1);
 }
-.social_icon--insta{
+
+.social_icon--insta {
   background-image: url("../images/insta.png");
 }
+
 /* =======================>>> */
 
 
@@ -2237,6 +2253,7 @@ fieldset {
   text-decoration: underline;
   font-weight: 500;
 }
+
 #login-signup input:focus,
 #login-signup textarea:focus {
   outline: 0;
@@ -2273,7 +2290,8 @@ fieldset {
   margin: 0 auto;
   position: relative;
 }
-.signup_inner::after{
+
+.signup_inner::after {
   position: absolute;
   top: 0;
   right: 0;
@@ -2445,8 +2463,9 @@ fieldset {
 .back-btn a:hover {
   opacity: 0.9;
 }
-.back-btn svg{
-filter: invert(1);
+
+.back-btn svg {
+  filter: invert(1);
 }
 
 .palyer-header {
@@ -2690,7 +2709,7 @@ td.player-dp img {
 
 .matches-table th {
   background: var(--pre-blue) !important;
-  color:var(--white-color) !important;
+  color: var(--white-color) !important;
 }
 
 .match-team-logo span {
@@ -2904,7 +2923,7 @@ table tr:nth-child(odd):hover {
 
 .fusball_leagues-inner-content table th {
   background: var(--pre-blue) !important;
-  color:var(--white-color) !important;
+  color: var(--white-color) !important;
 }
 
 section.destination.firsts {
@@ -3143,10 +3162,6 @@ td.match-team-logo a {
 .profile-image {
   width: 40px;
   height: 40px;
-  background-image: url(../images/dummy.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   border-radius: 50%;
 }
 
@@ -3305,9 +3320,6 @@ section.my-profile {
   border-radius: 50%;
   /* border: 3px solid #12e1b9; */
   border: 3px solid var(--pre-blue);
-  background-image: url("../images/dummy.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .edit_pan svg {
@@ -3345,7 +3357,7 @@ section.my-profile {
 
 .content-bar a {
   display: inline-block;
-  color: #000;
+  color: #fff;
   /* background-color: #12e1b9; */
   background-color: var(--pre-blue);
   padding: 10px;
@@ -3356,6 +3368,7 @@ section.my-profile {
 .content-bar a:hover {
   background-color: #fff;
   box-shadow: var(--pre-blue) 0px 3px 8px;
+  color: #000;
 }
 
 .content-bar span {
@@ -3421,7 +3434,6 @@ span.edit_pan i {
   width: auto;
   padding: 11px 44px;
   display: inline-block;
-  margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 20px;
   /* background-color: #12e1b9; */
@@ -3436,8 +3448,8 @@ span.edit_pan i {
 }
 
 .user-content-box button:hover {
-  background-color:var(--white-color);
-  color:var(--blue-light);
+  background-color: var(--white-color);
+  color: var(--blue-light);
   box-shadow: var(--pre-blue) 0px 3px 8px;
   border-color: var(--blue-light);
 }
@@ -3511,7 +3523,7 @@ td.match-score h4 {
   font-size: 22px;
   font-weight: 700;
   /* color: #000; */
-  color:var(--white-color);
+  color: var(--white-color);
   padding: 0 5px;
 }
 
@@ -3567,7 +3579,7 @@ td.match-score h4 {
 .plyr-headr .match-details h6 {
   font-size: 18px;
   margin-bottom: 10px;
-  color:var(--white-color);
+  color: var(--white-color);
   font-weight: 600;
 }
 
@@ -3575,14 +3587,14 @@ td.match-score h4 {
   font-size: 17px;
   margin-bottom: 10px;
   /* color: #000; */
-  color:var(--white-color);
+  color: var(--white-color);
 }
 
 .plyr-headr .match-details span {
   font-size: 14px;
   margin-bottom: 10px;
   /* color: #000; */
-  color:var(--white-color);
+  color: var(--white-color);
 }
 
 .fusball_leagues tbody tr td p {
@@ -4079,9 +4091,45 @@ fieldset {
 .banner_myMatches {
   background-image: url("../images/my_matches.jpg");
 }
-.matchDtls_banner{
+
+.matchDtls_banner {
   background-image: url("../images/match-detail-banner.jpg");
 
 }
 
 /* Footer Pages CSS End*/
+
+
+
+/* 20-12-2024 */
+span.alert {
+  padding: 7px;
+  position: absolute;
+  top: 92px;
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+}
+
+#login-signup h3 {
+  margin-bottom: 60px;
+}
+
+.mmy-profile-inner .col-sec {
+  background-color: #2955bb0a;
+  padding: 20px;
+  position: relative;
+}
+
+.mmy-profile-inner .col-sec span.alert.alert-success.col-md-12.text-center.profile-success {
+  top: 45px;
+  left: 22%;
+}
+.user-content-box button {
+  margin-left: 0;
+}  
+/*  */

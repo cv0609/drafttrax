@@ -472,36 +472,7 @@
                     </p>
                 </div>
             </div>
-            <div class="accordion">
-                <div class="accordion_head">
-                    <h4 class="accordion_question"> Puis-je réserver
-                        plusieurs cabines pour un groupe ?
-                    </h4>
-                </div>
-                <div class="accordion_content">
-                    <p> Oui, vous pouvez réserver plusieurs cabines pour
-                        des groupes. Il vous suffit de contacter
-                        directement la compagnie de croisière pour des
-                        réductions de groupe ou des arrangements
-                        spéciaux.
-                    </p>
-                </div>
-            </div>
-            <div class="accordion">
-                <div class="accordion_head">
-                    <h4 class="accordion_question"> Mes informations
-                        personnelles sont-elles sécurisées sur votre
-                        site ?
-                    </h4>
-                </div>
-                <div class="accordion_content">
-                    <p> Votre confidentialité et sécurité sont notre
-                        priorité. Nous utilisons un cryptage de niveau
-                        industriel pour garantir la protection de vos
-                        informations personnelles.
-                    </p>
-                </div>
-            </div>
+            
             <div class="accordion_btmConntent">
                 <h4 class="desc_help">Need More Help?</h4>
                 <p class="fa_desc">Contact our support team at <a

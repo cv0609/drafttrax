@@ -53,7 +53,7 @@
                                             id="Phone" autocomplete="off" name="phone" value="{{ Auth::user()->phone  }}">
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Updated</button>
+                                    <button type="submit" class="btn btn-primary">Update</button>
 
                                 </form>
                             </div>
