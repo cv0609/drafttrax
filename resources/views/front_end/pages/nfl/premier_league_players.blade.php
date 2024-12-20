@@ -695,7 +695,7 @@
 <div id="errorModal" class="modal">
     <div class="modal-content">
         <div class="modal-image">
-            <img src="{{asset('assets/images/cancel.png')}}" alt="error">
+            <img src="{{asset('assets/images/x.svg')}}" alt="error">
         </div>
         <span class="close-button"><img src="{{asset('assets/images/modal-close.png')}}" alt="" class="tab-close"></span>
         <p id="cap-message"></p>
