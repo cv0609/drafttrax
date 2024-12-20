@@ -30,7 +30,7 @@
                         <ul class="playing_list">
                             <li class="playing_item">
                                 Head to www.drafttrax.com to sign up and
-                                join the best platform for <a href>fantasy football.</a>
+                                join the best platform for fantasy football.
                             </li>
                             <li class="playing_item">
                                 Enter your email and create a secure
@@ -38,8 +38,8 @@
                             </li>
                             <li class="playing_item">
                                 Confirm your email, and you're all set
-                                to dive into the exciting world of <a href>fantasy
-                                    leagues.</a>
+                                to dive into the exciting world of fantasy
+                                    leagues.
                             </li>
                         </ul>
                         <h4 class="playing_subTitle">Step 2: Join or
@@ -63,7 +63,7 @@
                         </h4>
                         <ul class="playing_list">
                             <li class="playing_item">Give your team a
-                                name that stands out in your <a href>fantasy league</a> and upload a
+                                name that stands out in your fantasy league and upload a
                                 custom
                                 logo to show off your style.
                             </li>
@@ -234,7 +234,7 @@
 
                         </ul>
                         <p class="playing_desc">Note: Scoring settings
-                            can vary by league. Check your <a href>fantasy league’s</a> rules for
+                            can vary by league. Check your fantasy league’s rules for
                             details</p>
                     </div>
                 </div>
@@ -253,7 +253,7 @@
                         <ul class="playing_list">
                             <li class="playing_item">
                                 Propose trades with other managers in
-                                your <strong>fantasy league</strong> to
+                                your fantasy league to
                                 strengthen your
                                 roster
                             </li>
@@ -271,7 +271,7 @@
                             <li class="playing_item">Claim top free
                                 agents to replace underperforming
                                 players and gain an edge in your
-                                <a href>fantasy football league</a></li>
+                                fantasy football league</li>
                         </ul>
                     </div>
                 </div>
@@ -295,7 +295,7 @@
                                 for your team
                             </li>
                             <li class="playing_item">
-                                Watch your<a href> fantasy football</a>
+                                Watch your fantasy football
                                 points update live throughout the games
                             </li>
                         </ul>
@@ -327,8 +327,8 @@
                         <ul class="playing_list">
                             <li class="playing_item">
                                 Battle in weekly matchups to earn points
-                                and rise in your<a href>fantasy
-                                    league</a>standings.
+                                and rise in your fantasy
+                                    league standings.
                             </li>
 
                         </ul>
@@ -346,8 +346,8 @@
                         <ul class="playing_list">
                             <li class="playing_item">
                                 The final game determines the ultimate
-                                winner of your <a href>fantasy football
-                                    league</a>
+                                winner of your fantasy football
+                                    league 
                                 Claim bragging rights and victory
                             </li>
                         </ul>

@@ -8,7 +8,7 @@
                 <div class="header_navbar">
                     <ul class="header_list">
                         <li class="header_item">
-                            <a href="{{ route('home') }}" class="header_link {{ Route::is('home') ? 'active' :'' }}  ">Homepage</a>
+                            <a href="{{ route('home') }}" class="header_link {{ Route::is('home') ? 'active' :'' }}  ">Home</a>
                         </li>
                         <li class="header_item">
                             <a href="{{ route('play-guide') }}" class="header_link {{ Route::is('play-guide') ? 'active' :'' }}">Playing Guide</a>

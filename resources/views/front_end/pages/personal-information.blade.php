@@ -7,17 +7,11 @@
 
     <div class="banner_content">
         <h1 class="heading banner_heading">
-            Personal Data PolicyPolicy
+        Personal Data Policy
         </h1>
-        <p class="banner_desc">At Draft Trax, we are committed to
-            safeguarding your Personal Data Policyand respecting your
-            privacy. This Personal Data PolicyPolicy outlines how we
-            collect, use, store, and protect your Personal Data Policywhen
-            you access or use our website, mobile applications, and
-            services related to fantasy football, fantasy sports,
-            and fantasy leagues (collectively referred to as the
-            "Services"). By using our Services, you consent to the
-            practices outlined in this policy.
+        <p class="banner_desc">
+            At Draft Trax, we are committed to safeguarding your personal data and respecting your privacy. This Personal Data Policy outlines how we collect, use, store, and protect your personal data when you access or use our website, mobile applications, and services related to fantasy football, fantasy sports, and fantasy leagues (collectively referred to as the "Services"). By using our Services, you consent to the practices outlined in this policy.
+
         </p>
 
     </div>
@@ -28,17 +22,13 @@
             <div class="personalData_content sec_content">
 
                 <h3 class="sec_title">1. Introduction</h3>
-                <p class="sec_desc">Draft Trax understands that the
-                    protection of your Personal Data Policyis a fundamental
-                    concern. We are fully committed to complying with
-                    applicable data protection laws, including the
-                    General Data Protection Regulation (GDPR), the
-                    California Consumer Privacy Act (CCPA), and other
-                    relevant privacy laws</p>
-                <p class="sec_desc">This Personal Data PolicyPolicy
+                <p class="sec_desc">
+                Draft Trax understands that the protection of your personal data is a fundamental concern. We are fully committed to complying with applicable data protection laws, including the General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), and other relevant privacy laws.
+                </p>
+                <p class="sec_desc">This Personal Data Policy 
                     explains:</p>
                 <ul class="sec_list">
-                    <li class="sec_item">The types of Personal Data Policywe
+                    <li class="sec_item">The types of Personal Data Policy we
                         collect.</li>
                     <li class="sec_item">How we use and process your
                         personal data.</li>
@@ -49,10 +39,10 @@
                     <li class="sec_item">Our practices in relation to
                         data sharing and transfers.</li>
                 </ul>
-                <h3 class="sec_title">2. Types of Personal Data PolicyWe
+                <h3 class="sec_title">2. Types of Personal Data Policy 
                     Collect</h3>
                 <p class="sec_desc">We collect and process personal data
-                    when you use our Services. The Personal Data Policywe
+                    when you use our Services. The Personal Data Policy We
                     collect may include:</p>
                 <h4 class="sub_title">a. Account and Registration
                     Information</h4>
@@ -100,7 +90,7 @@
                 <h4 class="sub_title">d. Usage Data</h4>
                 <ul class="sec_list">
                     <li class="sec_item"><strong>Device
-                            Information:</strong>: Data about your
+                            Information:</strong> Data about your
                         device, such as IP address, device type,
                         operating system, and browser type.
                     </li>
@@ -186,7 +176,7 @@
                 <h4 class="sub_title">c. Business Transactions</h4>
                 <p class="sec_desc">In the event that Draft Trax is
                     involved in a merger, acquisition, or sale of
-                    assets, your Personal Data Policymay be transferred as
+                    assets, your Personal Data Policy may be transferred as
                     part of that transaction. We will notify you if such
                     a transfer occurs.</p>
                 <h4 class="sub_title">d. Aggregate or De-Identified
@@ -197,7 +187,7 @@
                     information cannot be used to identify you.</p>
                 <h4 class="sec_title">5. Data Storage and Security</h4>
                 <p class="sec_desc">We take the security of your
-                    Personal Data Policyseriously and use industry-standard
+                    Personal Data Policy seriously and use industry-standard
                     security measures to protect it from unauthorized
                     access, alteration, disclosure, or destruction.
                     These measures include encryption, secure servers,
@@ -214,7 +204,7 @@
                     applicable laws. These rights may include:</p>
                 <h4 class="sub_title">a. Access</h4>
                 <p class="sec_desc">You can request access to the
-                    Personal Data Policywe hold about you and receive a copy
+                    Personal Data Policy We hold about you and receive a copy
                     of it.
                 </p>
                 <h4 class="sub_title">b. Correction</h4>
@@ -231,12 +221,12 @@
                     including direct marketing.</p>
                 <h4 class="sub_title">e. Portability</h4>
                 <p class="sec_desc">You have the right to request the
-                    transfer of your Personal Data Policyin a structured,
+                    transfer of your Personal Data Policy in a structured,
                     commonly used, and machine-readable format to
                     another organization, where applicable.</p>
                 <h4 class="sub_title">f. Objection</h4>
                 <p class="sec_desc">You can object to the processing of
-                    your Personal Data Policyfor certain purposes, including
+                    your Personal Data Policy for certain purposes, including
                     for direct marketing.</p>
                 <h4 class="sub_title">g. Withdrawal of Consent</h4>
                 <p class="sec_desc">If we are relying on your consent to
@@ -257,21 +247,21 @@
                     our Services, you consent to the transfer of your
                     data to the United States.</p>
                 <h3 class="sec_title">8. Retention of Personal Data</h3>
-                <p class="sec_desc">We retain your Personal Data Policyonly
+                <p class="sec_desc">We retain your Personal Data Policy only
                     for as long as necessary to fulfill the purposes
                     outlined in this policy, unless a longer retention
                     period is required or permitted by law. Once your
-                    Personal Data Policyis no longer needed, we will securely
+                    Personal Data Policy is no longer needed, we will securely
                     delete or anonymize it.</p>
                 <h3 class="sec_title">9. Children’s Privacy</h3>
                 <p class="sec_desc">Draft Trax does not knowingly
-                    collect Personal Data Policyfrom individuals under the age
+                    collect Personal Data Policy from individuals under the age
                     of 13. If we learn that we have collected personal
                     data from a child under 13, we will take steps to
                     delete such data as soon as possible</p>
                 <h3 class="sec_title">10. Changes to This Policy</h3>
                 <p class="sec_desc">We may update or modify this
-                    Personal Data PolicyPolicy from time to time. Any changes
+                    Personal Data Policy from time to time. Any changes
                     will be effective immediately upon posting the
                     updated policy on our website, and the “Effective
                     Date” will reflect the most recent revision. We

@@ -74,6 +74,8 @@
                 <div class="socials">
                     <p class="sec_desc">Submit your message, and we’ll respond within 24-48 hours.
                     </p>
+                    <h4 class="sub_title">Email Support</h4>
+                    <p class="sec_desc">For general inquiries, league questions, or account issues, email us at <a class="sec_email" href="info@drafttrax.com">info@drafttrax.com .</a></p>
                     <h4 class="sub_title">Social Media</h4>
                     <p class="sec_desc">Connect with us on social media for updates, tips, and announcements:</p>
                     <div class="socials_wrapper">
