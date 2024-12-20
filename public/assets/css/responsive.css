@@ -949,6 +949,14 @@
 
 
 @media screen and (max-width:1200px) {
+  .fusball_leagues table {
+    border-radius: 0;
+  }
+
+  .matches-table.matche-det {
+    border-radius: 0 !important;
+}
+
   .custom-menu {
     position: fixed;
     top: 0;
