@@ -8,16 +8,16 @@
                 <div class="header_navbar">
                     <ul class="header_list">
                         <li class="header_item">
-                            <a href="{{ route('home') }}" class="header_link active">Homepage</a>
+                            <a href="{{ route('home') }}" class="header_link {{ route::is('home') ? 'active' :'' }}  ">Homepage</a>
                         </li>
                         <li class="header_item">
-                            <a href="{{ route('play-guide') }}" class="header_link">Playing Guide</a>
+                            <a href="{{ route('play-guide') }}" class="header_link {{ route::is('play-guide') ? 'active' :'' }}">Playing Guide</a>
                         </li>
                         <li class="header_item">
-                            <a href="{{ route('about.us') }}" class="header_link">About us</a>
+                            <a href="{{ route('about.us') }}" class="header_link {{ route::is('about.us') ? 'active' :'' }}">About us</a>
                         </li>
                         <li class="header_item">
-                            <a href="{{ route('contact.us') }}" class="header_link">Contact-us </a>
+                            <a href="{{ route('contact.us') }}" class="header_link {{ route::is('contact.us') ? 'active' :'' }}">Contact-us </a>
                         </li>
                         <li class="close_menu">
                             <div class="close_menuIcon"></div>
