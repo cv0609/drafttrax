@@ -4229,3 +4229,6 @@ p.team_captain button img {
   height: 100%;
   width: 100%;
 }
+.team-view-table span.c-logo {
+  color: #fff;
+}
