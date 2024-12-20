@@ -39,18 +39,34 @@
                                         <div class="mb-3 col-sm-6">
                                             <input type="text" placeholder="Name" class="form-control para" id="name"
                                             name="first_name" autocomplete="off" value="{{ Auth::user()->first_name }}">
+                                            @error('first_name')
+                                            <br>
+                                            <span class="text-danger" style="color: red;">{{ $message }}</span>
+                                            @enderror
                                         </div>
                                         <div class="mb-3 col-sm-6">
                                             <input type="text" placeholder="User Name" class="form-control para"
                                             id="last-name" autocomplete="off" name="last_name" value="{{ Auth::user()->last_name }}">
+                                            @error('last_name')
+                                            <br>
+                                            <span class="text-danger" style="color: red;">{{ $message }}</span>
+                                            @enderror
                                         </div>
                                         <div class="mb-3 col-sm-6">
                                             <input type="email" placeholder="E-mail" class="form-control para"
                                             id="email" name="email" autocomplete="off" value="{{ Auth::user()->email }}">
+                                            @error('email')
+                                            <br>
+                                            <span class="text-danger" style="color: red;">{{ $message }}</span>
+                                            @enderror
                                         </div>
                                         <div class="mb-3 col-sm-6">
                                             <input type="text" placeholder="Telephone" class="form-control para"
                                             id="Phone" autocomplete="off" name="phone" value="{{ Auth::user()->phone  }}">
+                                            @error('phone')
+                                            <br>
+                                            <span class="text-danger" style="color: red;">{{ $message }}</span>
+                                            @enderror
                                         </div>
                                     </div>
                                     <button type="submit" class="btn btn-primary">Update</button>
