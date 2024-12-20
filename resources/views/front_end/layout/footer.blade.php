@@ -35,7 +35,7 @@
                     <h4 class="footer_title">Quick link</h4>
                     <ul class="footer_list">
                         <li class="footer_item">
-                            <a href="{{ route('home') }}" class="footer_link">Homepage</a>
+                            <a href="{{ route('home') }}" class="footer_link">Home</a>
                         </li>
                         <li class="footer_item">
                             <a href="{{ route('play-guide') }}" class="footer_link">Playing Guide</a>
@@ -55,7 +55,7 @@
                             <a href="{{ route('privacy.policy') }}" class="footer_link">Privacy Policy </a>
                         </li>
                         <li class="footer_item">
-                            <a href="{{ route('terms.condition') }}" class="footer_link">Terms and Conditions</a>
+                            <a href="{{ route('terms.condition') }}" class="footer_link">Terms & Conditions</a>
                         </li>
                         <li class="footer_item">
                             <a href="{{ route('personal.info') }}" class="footer_link">Personal Data Policy</a>

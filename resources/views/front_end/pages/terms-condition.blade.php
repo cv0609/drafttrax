@@ -1,12 +1,12 @@
 @extends('front_end.layout.main')
-@section('title', 'Terms and Conditions')
+@section('title', 'Terms & Conditions')
 @section('content')
 
 <!-- Banner Section Start -->
 <section class="banner banner--term">
     <div class="banner_content">
         <h1 class="banner_heading heading">
-            Terms and Conditions
+            Terms & Conditions
         </h1>
         <p class="banner_desc">Welcome to Draft Trax! These Terms and
             Conditions (“Terms”) govern your use of our website, mobile
