@@ -4211,7 +4211,7 @@ p.team_captain button {
   height: 25px;
   width: 25px;
   max-width: 25px;
-  border-color: #2955bb !important;
+  border-color: #00c900 !important;
   border-radius: 50%;
   padding: 5px;
   display: inline-flex;
@@ -4219,7 +4219,8 @@ p.team_captain button {
   align-items: center;
   outline: none;
   box-shadow: none !important;
-  border: 1px solid #2955bb;
+  background-color: transparent;
+  border: 1px solid #00c900;
 }
 
 p.team_captain button img {
