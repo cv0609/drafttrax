@@ -32,7 +32,7 @@
                                 Login</button>
                         </fieldset>
                         <p class="jump-text">
-                            You don't have an account yet? <a href="{{ route('register') }}">Sing Up</a>
+                            You don't have an account yet? <a href="{{ route('register') }}">Sign Up</a>
                         </p>
                     </form>
                 </div>

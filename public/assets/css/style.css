@@ -2257,11 +2257,6 @@ fieldset {
   font-weight: 500;
 }
 
-#login-signup input:focus,
-#login-signup textarea:focus {
-  outline: 0;
-  border: 1px solid #aaa;
-}
 
 ::-webkit-input-placeholder {
   color: #d7d6d6;
@@ -3324,8 +3319,6 @@ section.my-profile {
   margin: 0 auto;
   height: 80px;
   border-radius: 50%;
-  /* border: 3px solid #12e1b9; */
-  border: 3px solid var(--pre-blue);
 }
 
 .edit_pan svg {
@@ -4265,4 +4258,22 @@ p.team_captain button img {
 .modal-footer button:hover {
   color: #2955bb;
   border: 1px solid #2955bb;
+}
+.update_img_user_img {
+  position: relative;
+  width: 80px;
+  margin: 0 auto;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #61d5b6;
+  overflow: hidden;
+}
+.update_img_user_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.login-signup-wrapper form#login-signup input {
+  padding: 10px;
+  margin: 0 0 5px;
 }

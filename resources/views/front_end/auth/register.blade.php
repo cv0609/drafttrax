@@ -21,7 +21,7 @@
                             @enderror
                         </fieldset>
                         <fieldset>
-                            <input placeholder="last Name" name="last_name" id="lastName" type="text" tabindex="2" value="{{ old('last_name') }}" autofocus>
+                            <input placeholder="User Name" name="last_name" id="lastName" type="text" tabindex="2" value="{{ old('last_name') }}" autofocus>
                             @error('last_name')
                             <br>
                             <span class="text-danger" style="color:red;">{{ $message }}</span>
@@ -53,7 +53,7 @@
                         </fieldset>
 
                         <fieldset>
-                            <button name="submit" type="submit" id="signup-submit" data-submit="...Sending">Sing
+                            <button name="submit" type="submit" id="signup-submit" data-submit="...Sending">Sign
                                 Up</button>
                         </fieldset>
                         <p class="jump-text">

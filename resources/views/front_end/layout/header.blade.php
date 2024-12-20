@@ -17,7 +17,7 @@
                             <a href="{{ route('about.us') }}" class="header_link {{ Route::is('about.us') ? 'active' :'' }}">About us</a>
                         </li>
                         <li class="header_item">
-                            <a href="{{ route('contact.us') }}" class="header_link {{ Route::is('contact.us') ? 'active' :'' }}">Contact-us </a>
+                            <a href="{{ route('contact.us') }}" class="header_link {{ Route::is('contact.us') ? 'active' :'' }}">Contact us </a>
                         </li>
                         <li class="close_menu">
                             <div class="close_menuIcon"></div>
@@ -26,7 +26,7 @@
                     @if(!Auth::check())
                     <div class="header_right">
                         <a href="{{ route('login') }}" class="btn header_login">Login</a>
-                        <a href="{{ route('register') }}" class="btn header_singUp">SingUp</a>
+                        <a href="{{ route('register') }}" class="btn header_singUp">Sign Up</a>
                     </div>
                     @endif
                     @if(Auth::check())
