@@ -44,7 +44,7 @@
                             <a href="{{ route('about.us') }}" class="footer_link">About us</a>
                         </li>
                         <li class="footer_item">
-                            <a href="{{ route('contact.us') }}" class="footer_link">contact-us</a>
+                            <a href="{{ route('contact.us') }}" class="footer_link">Contact us</a>
                         </li>
                     </ul>
                 </div>
